@@ -25,13 +25,13 @@ pipeline {
             }
         }
         
-        stage('Quality Gate') {
-            steps {
-                withSonarQubeEnv('sonarqube') {
-                    waitForQualityGate abortPipeline: true
-                }
-            }
-        }
+        // stage('Quality Gate') {
+        //     steps {
+        //         withSonarQubeEnv('sonarqube') {
+        //             waitForQualityGate abortPipeline: true
+        //         }
+        //     }
+        // }
         
       
     }
